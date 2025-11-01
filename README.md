@@ -2,6 +2,9 @@
 
 This project is a **Turborepo monorepo** consisting of an **API** and a **React frontend**. It provides real-time **WebSocket communication** to synchronize **cursor pointers** across clients. Frontend routing is handled using **TanStack Router**.
 
+# Screenshot Example
+<img width="1915" height="1072" alt="ws-cursor-ss" src="https://github.com/user-attachments/assets/161c887d-3c1e-484c-9dc6-822722536a83" />
+
 ---
 
 ## Table of Contents
