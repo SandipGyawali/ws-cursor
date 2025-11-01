@@ -1,0 +1,8 @@
+{
+  "extends": "@ws-cursor/typescript-config/base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": ["."]
+}
