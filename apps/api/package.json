@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 bun --bun --env-file=../../.env --watch index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.5",
+    "@types/ws": "^8.18.1",
+    "@ws-cursor/env": "*",
+    "@ws-cursor/typescript-config": "*"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}

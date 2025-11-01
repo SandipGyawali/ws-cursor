@@ -1,0 +1,17 @@
+{
+  "name": "@ws-cursor/env",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./server": "./server.ts",
+    "./client": "./client.ts"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@ws-cursor/typescript-config": "*"
+  }
+}
