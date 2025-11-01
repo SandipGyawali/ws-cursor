@@ -20,7 +20,7 @@ import {
 } from '@ws-cursor/ui/form'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { redirect, useNavigate } from '@tanstack/react-router'
+import { useNavigate } from '@tanstack/react-router'
 import { loginSchema } from '../schema'
 import type { ZLoginSchema } from '../schema'
 import { useUserStore } from '@/store/users'
