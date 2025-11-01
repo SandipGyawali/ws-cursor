@@ -1,7 +1,7 @@
 import z from "zod";
 
 const ENV_SCHEMA = z.object({
-  WS_URL: z.string().default("ws://localhost"),
+  VITE_WS_URL: z.string().default("ws://localhost"),
 });
 
 const CLIENT_ENV = ENV_SCHEMA.parse(import.meta.env);

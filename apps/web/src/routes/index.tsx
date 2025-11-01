@@ -1,6 +1,8 @@
+import React from 'react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useUserStore } from '@/store/users'
-import Home from '@/components/Home'
+
+const HomePage = React.lazy(() => import('@/components/Home'))
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -10,8 +12,7 @@ function App() {
   const navigate = useNavigate({
     from: '/',
   })
-
-  const users = useUserStore()
+  const users = useUserStore.getState()
 
   if (!users.username || users.username == '') {
     navigate({
@@ -20,5 +21,5 @@ function App() {
     return null
   }
 
-  return <Home username={users.username} />
+  return <HomePage username={users.username} />
 }

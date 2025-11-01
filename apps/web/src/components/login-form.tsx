@@ -20,7 +20,7 @@ import {
 } from '@ws-cursor/ui/form'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useNavigate } from '@tanstack/react-router'
+import { redirect, useNavigate } from '@tanstack/react-router'
 import { loginSchema } from '../schema'
 import type { ZLoginSchema } from '../schema'
 import { useUserStore } from '@/store/users'
@@ -32,6 +32,7 @@ export function LoginForm({
   const navigate = useNavigate({
     from: '/login',
   })
+
   const { setUsername } = useUserStore()
   const form = useForm({
     resolver: zodResolver(loginSchema),

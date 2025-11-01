@@ -1,6 +1,6 @@
 interface UsersInterface {
   username: string;
-  uuid: string;
+  state: Object;
 }
 
-export const users: Record<string, UsersInterface> = {};
+export const users: { [uuid: string]: UsersInterface } = {};
