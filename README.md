@@ -29,33 +29,6 @@ Routing and navigation in the frontend are managed with **TanStack Router** for 
 
 ---
 
-## Project Structure
-
-.turbo/
-apps/
-├─ api/
-├─ web/
-node_modules/
-packages/
-├─ env/
-├─ eslint-config/
-├─ node_modules/
-├─ tailwind-config/
-├─ typescript-config/
-├─ ui/
-├─ utils/
-scripts/
-.env
-.env.sample
-.gitignore
-.npmrc
-bun.lock
-package.json
-README.md
-turbo.json
-
----
-
 ## Features
 
 - Turborepo monorepo for structured development
